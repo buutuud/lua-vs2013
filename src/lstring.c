@@ -109,6 +109,26 @@ static TString *createstrobj (lua_State *L, const char *str, size_t l,
   return ts;
 }
 
+static void dumpstrtable(lua_State *L)
+{
+	stringtable* tb = &(L->l_G->strt);
+	for (int i = 0; i < tb->size; i++)
+	{
+		char buffer[100] = { 0 };
+		GCObject *p = tb->hash[i];
+		//sprintf_s(buffer, "i=%d", i);
+		printf("i=%d ", i);
+		while (p) /* for each node in the list */
+		{
+			unsigned int h = gco2ts(p)->hash;
+			unsigned int pos = lmod(h, tb->size);
+			printf("%s,h=%u,p=%d -> ", getstr(gco2ts(p)),h, pos);
+			p = gch(p)->next; /* iter to next*/
+		}
+		printf("\n");
+	}
+	printf("used=%u,total=%u\n", tb->nuse, tb->size);
+}
 
 /*
 ** creates a new short string, inserting it into string table
@@ -118,9 +138,15 @@ static TString *newshrstr (lua_State *L, const char *str, size_t l,
   GCObject **list;  /* (pointer to) list where it will be inserted */
   stringtable *tb = &G(L)->strt;
   TString *s;
-  if (tb->nuse >= cast(lu_int32, tb->size) && tb->size <= MAX_INT/2)
-    luaS_resize(L, tb->size*2);  /* too crowded */
-  list = &tb->hash[lmod(h, tb->size)];
+  if (tb->nuse >= cast(lu_int32, tb->size) && tb->size <= MAX_INT / 2)
+  {
+	  dumpstrtable(L);
+	  luaS_resize(L, tb->size * 2);  /* too crowded */
+	  dumpstrtable(L);
+  }
+  int p = lmod(h, tb->size);
+  printf("%s,h=%d,size=%d,p=%d\n", str, h,tb->size, p);
+  list = &tb->hash[p];
   s = createstrobj(L, str, l, LUA_TSHRSTR, h, list);
   tb->nuse++;
   return s;

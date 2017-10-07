@@ -95,7 +95,8 @@ static unsigned int makeseed (lua_State *L) {
   addbuff(buff, p, luaO_nilobject);  /* global variable */
   addbuff(buff, p, &lua_newstate);  /* public function */
   lua_assert(p == sizeof(buff));
-  return luaS_hash(buff, p, h);
+  //return luaS_hash(buff, p, h);
+  return 1001;
 }
 
 
