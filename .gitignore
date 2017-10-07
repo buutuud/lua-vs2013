@@ -241,3 +241,8 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+# For Make
+*.o
+install/*
+
