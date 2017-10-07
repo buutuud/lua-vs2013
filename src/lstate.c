@@ -166,15 +166,15 @@ static void freestack (lua_State *L) {
 static void init_registry (lua_State *L, global_State *g) {
   TValue mt;
   /* create registry */
-  Table *registry = luaH_new(L);
-  sethvalue(L, &g->l_registry, registry);
-  luaH_resize(L, registry, LUA_RIDX_LAST, 0);
+  Table *registry = luaH_new(L);                           //registry = {}
+  sethvalue(L, &g->l_registry, registry);                  //g->l_registry(TVaule) = registry(Table) ={}
+  luaH_resize(L, registry, LUA_RIDX_LAST, 0);              //g->l_registry(TVaule) = registry(Table) ={arraysize=2}
   /* registry[LUA_RIDX_MAINTHREAD] = L */
-  setthvalue(L, &mt, L);
-  luaH_setint(L, registry, LUA_RIDX_MAINTHREAD, &mt);
+  setthvalue(L, &mt, L);                                   //mt(TVaule) = L(Thread)
+  luaH_setint(L, registry, LUA_RIDX_MAINTHREAD, &mt);      //registry[1] = mt
   /* registry[LUA_RIDX_GLOBALS] = table of globals */
-  sethvalue(L, &mt, luaH_new(L));
-  luaH_setint(L, registry, LUA_RIDX_GLOBALS, &mt);
+  sethvalue(L, &mt, luaH_new(L));                          //这里复用了mt这个变量,其类型变成了Table类型
+  luaH_setint(L, registry, LUA_RIDX_GLOBALS, &mt);         //相关于t[2]={}
 }
 
 
