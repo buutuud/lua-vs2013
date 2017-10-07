@@ -1,4 +1,4 @@
-/*
+﻿/*
 ** $Id: lauxlib.c,v 1.248.1.1 2013/04/12 18:48:47 roberto Exp $
 ** Auxiliary functions for building Lua libraries
 ** See Copyright Notice in lua.h
@@ -915,14 +915,16 @@ LUALIB_API const char *luaL_gsub (lua_State *L, const char *s, const char *p,
   return lua_tostring(L, -1);
 }
 
-
+/*
+内存分配函数
+*/
 static void *l_alloc (void *ud, void *ptr, size_t osize, size_t nsize) {
   (void)ud; (void)osize;  /* not used */
-  if (nsize == 0) {
+  if (nsize == 0) { /* 当newsize==0时,释放内存块*/
     free(ptr);
     return NULL;
   }
-  else
+  else              /* 否则开辟新的连续空间*/
     return realloc(ptr, nsize);
 }
 

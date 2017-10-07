@@ -1,4 +1,4 @@
-/*
+﻿/*
 ** $Id: lstate.c,v 2.99.1.2 2013/11/08 17:45:31 roberto Exp $
 ** Global State
 ** See Copyright Notice in lua.h
@@ -272,40 +272,40 @@ LUA_API lua_State *lua_newstate (lua_Alloc f, void *ud) {
   if (l == NULL) return NULL;
   L = &l->l.l;
   g = &l->g;
-  L->next = NULL;
-  L->tt = LUA_TTHREAD;
-  g->currentwhite = bit2mask(WHITE0BIT, FIXEDBIT);
-  L->marked = luaC_white(g);
-  g->gckind = KGC_NORMAL;
-  preinit_state(L, g);
-  g->frealloc = f;
-  g->ud = ud;
-  g->mainthread = L;
-  g->seed = makeseed(L);
-  g->uvhead.u.l.prev = &g->uvhead;
+  L->next = NULL;      //因为线程也gc类型,所以next先赋值为NULL
+  L->tt = LUA_TTHREAD; //lua_State tag为theard类型
+  g->currentwhite = bit2mask(WHITE0BIT, FIXEDBIT); //gc管理后面再分析
+  L->marked = luaC_white(g); //gc管理后面再分析
+  g->gckind = KGC_NORMAL;    //gc管理后面再分析
+  preinit_state(L, g);       //**就是初始化函数=NULL =0啊什么的
+  g->frealloc = f;           //内存管理函数
+  g->ud = ud;                //ud=NULL所以目前而言没啥用诶
+  g->mainthread = L;         //主线程
+  g->seed = makeseed(L);     //随机函数种子,目前而言在hash函数里面使用到了,防止hash碰撞攻击
+  g->uvhead.u.l.prev = &g->uvhead;  //双向链表
   g->uvhead.u.l.next = &g->uvhead;
   g->gcrunning = 0;  /* no GC while building state */
   g->GCestimate = 0;
-  g->strt.size = 0;
+  g->strt.size = 0;          //全局字符串表
   g->strt.nuse = 0;
   g->strt.hash = NULL;
-  setnilvalue(&g->l_registry);
-  luaZ_initbuffer(L, &g->buff);
-  g->panic = NULL;
-  g->version = NULL;
-  g->gcstate = GCSpause;
-  g->allgc = NULL;
-  g->finobj = NULL;
+  setnilvalue(&g->l_registry);  //全局注册表
+  luaZ_initbuffer(L, &g->buff); //luaZ buff初始化
+  g->panic = NULL;              //未保护调用错误回调函数
+  g->version = NULL;            //版本号
+  g->gcstate = GCSpause;        //又是gc
+  g->allgc = NULL;              //allgc指向所以gc对象
+  g->finobj = NULL;             //
   g->tobefnz = NULL;
   g->sweepgc = g->sweepfin = NULL;
   g->gray = g->grayagain = NULL;
   g->weak = g->ephemeron = g->allweak = NULL;
-  g->totalbytes = sizeof(LG);
-  g->GCdebt = 0;
-  g->gcpause = LUAI_GCPAUSE;
-  g->gcmajorinc = LUAI_GCMAJOR;
-  g->gcstepmul = LUAI_GCMUL;
-  for (i=0; i < LUA_NUMTAGS; i++) g->mt[i] = NULL;
+  g->totalbytes = sizeof(LG);   //内存统计
+  g->GCdebt = 0;                //gc借债
+  g->gcpause = LUAI_GCPAUSE;    //又是gc
+  g->gcmajorinc = LUAI_GCMAJOR; //gc
+  g->gcstepmul = LUAI_GCMUL;    //gc
+  for (i=0; i < LUA_NUMTAGS; i++) g->mt[i] = NULL;//全局元表数组
   if (luaD_rawrunprotected(L, f_luaopen, NULL) != LUA_OK) {
     /* memory allocation error: free partial state */
     close_state(L);

@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(Name=dumpstrtable @1 @8 @6 @3)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="387.688333333333,614.203333333332,113.353333333333,25.8366666666667" Label="dumpstrtable" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=113 StartCharacterOffset=0 EndLineNumber=113 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@10" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="302.07,335.02,84.59,25.8366666666666" Label="luaX_init" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/llex.c StartLineNumber=67 StartCharacterOffset=0 EndLineNumber=67 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="650.133333333333,55.8366666666666,64.4633333333334,25.8366666666667" Label="main" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lua.c StartLineNumber=500 StartCharacterOffset=0 EndLineNumber=500 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@13" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="219.94,558.366666666666,102.85,25.8366666666667" Label="init_registry" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstate.c StartLineNumber=174 StartCharacterOffset=0 EndLineNumber=174 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@14" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="562.946666666667,390.856666666666,88.8366666666666,25.8366666666666" Label="stack_init" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstate.c StartLineNumber=140 StartCharacterOffset=0 EndLineNumber=140 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@15" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="478.176666666667,670.039999999999,98.3766666666666,25.8366666666667" Label="luaS_resize" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=69 StartCharacterOffset=0 EndLineNumber=69 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="354.763333333333,390.856666666666,89.2033333333334,25.8366666666666" Label="luaS_new" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=197 StartCharacterOffset=0 EndLineNumber=197 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="627.258333333333,167.51,110.213333333333,25.8366666666667" Label="lua_newstate" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstate.c StartLineNumber=308 StartCharacterOffset=0 EndLineNumber=308 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="486.236666666667,279.183333333333,92.2566666666667,25.8366666666666" Label="f_luaopen" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstate.c StartLineNumber=187 StartCharacterOffset=0 EndLineNumber=187 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="348.376666666667,502.529999999999,101.976666666667,25.8366666666667" Label="internshrstr" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=175 StartCharacterOffset=0 EndLineNumber=175 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="345.863333333333,446.693333333333,107.003333333333,25.8366666666666" Label="luaS_newlstr" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=183 StartCharacterOffset=0 EndLineNumber=183 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@26" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="102.651666666667,670.039999999999,117.426666666667,25.8366666666667" Label="setarrayvector" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/ltable.c StartLineNumber=270 StartCharacterOffset=0 EndLineNumber=270 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@27" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="487.4,223.346666666666,163.93,25.8366666666667" Label="luaD_rawrunprotected" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/ldo.c StartLineNumber=133 StartCharacterOffset=0 EndLineNumber=133 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@28" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="353.46,558.366666666666,91.81,25.8366666666667" Label="newshrstr" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=143 StartCharacterOffset=0 EndLineNumber=143 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@29" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,614.203333333333,100.73,25.8366666666667" Label="luaH_resize" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/ltable.c StartLineNumber=310 StartCharacterOffset=0 EndLineNumber=310 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@30" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="537.483333333333,725.876666666666,113.763333333333,25.8366666666667" Label="luaM_realloc_" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lmem.c StartLineNumber=78 StartCharacterOffset=0 EndLineNumber=78 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@31" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="646.745,781.713333333332,71.24,25.8366666666667" Label="l_alloc" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lauxlib.c StartLineNumber=921 StartCharacterOffset=0 EndLineNumber=921 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@32" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="250.963333333333,670.039999999999,108.803333333333,25.8366666666667" Label="luaC_newobj" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lgc.c StartLineNumber=214 StartCharacterOffset=0 EndLineNumber=214 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@33" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="253.15,614.203333333332,104.43,25.8366666666667" Label="createstrobj" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lstring.c StartLineNumber=102 StartCharacterOffset=0 EndLineNumber=102 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@4" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="624.18,111.673333333333,116.37,25.8366666666667" Label="luaL_newstate" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/lauxlib.c StartLineNumber=939 StartCharacterOffset=0 EndLineNumber=939 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="131.586666666667,614.203333333332,91.5566666666667,25.8366666666667" Label="luaH_new" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/ltable.c StartLineNumber=368 StartCharacterOffset=0 EndLineNumber=368 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@9" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="417.5,335.019999999999,83.7300000000001,25.8366666666666" Label="luaT_init" SourceLocation="(Assembly=file:///g:/lua-vcpp/src/ltm.c StartLineNumber=41 StartCharacterOffset=0 EndLineNumber=41 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="648.365,0,68,25.8366666666667" Label="外部代码">
+      <Category Ref="CallStackEntry" />
+    </Node>
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="@18" Category="CallStackDirectCall" Bounds="357.089752197266,360.856658935547,23.2347412109375,23.5881958007813" />
+    <Link Source="@12" Target="@4" Category="CallStackDirectCall" Bounds="682.364990234375,81.6733322143555,0,21" />
+    <Link Source="@13" Target="@29" Category="CallStackDirectCall" Bounds="108.149063110352,583.868041992188,113.412719726563,28.6542358398438" />
+    <Link Source="@13" Target="@7" Category="CallStackDirectCall" Bounds="206.850601196289,584.203308105469,42.7666168212891,25.4036865234375" />
+    <Link Source="@14" Target="@30" Category="CallStackDirectCall" Bounds="599.413513183594,416.693328857422,7.95147705078125,300.417755126953" />
+    <Link Source="@15" Target="@30" Category="CallStackDirectCall" Bounds="542.866088867188,695.876647949219,29.083984375,24.2381591796875" />
+    <Link Source="@18" Target="@25" Category="CallStackDirectCall" Bounds="399.364990234375,416.693328857422,0,21" />
+    <Link Source="@21" Target="@27" Category="CallStackDirectCall" Bounds="603.577331542969,193.346664428711,52.64404296875,26.0130157470703" />
+    <Link Source="@21" Target="@31" Category="CallStackDirectCall" Bounds="682.364990234375,193.346664428711,0,579.366653442383" />
+    <Link Source="@22" Target="@10" Category="CallStackDirectCall" Bounds="394.191925048828,305.003692626953,94.732421875,28.1358642578125" />
+    <Link Source="@22" Target="@13" Category="CallStackDirectCall" Bounds="271.364990234375,299.015167236328,214.871673583984,250.351470947266" />
+    <Link Source="@22" Target="@14" Category="CallStackDirectCall" Bounds="541.040954589844,305.019989013672,52.6302490234375,78.3652954101563" />
+    <Link Source="@22" Target="@15" Category="CallStackDirectCall" Bounds="529.324523925781,305.019989013672,3.04046630859375,356.055877685547" />
+    <Link Source="@22" Target="@9" Category="CallStackDirectCall" Bounds="483.40283203125,305.019989013672,32.0729370117188,24.5321350097656" />
+    <Link Source="@24" Target="@28" Category="CallStackDirectCall" Bounds="399.364990234375,528.366638183594,0,21" />
+    <Link Source="@25" Target="@24" Category="CallStackDirectCall" Bounds="399.364990234375,472.529998779297,0,21" />
+    <Link Source="@26" Target="@30" Category="CallStackDirectCall" Bounds="220.012802124023,693.500305175781,308.529373168945,37.7315673828125" />
+    <Link Source="@27" Target="@22" Category="CallStackDirectCall" Bounds="545.896728515625,249.183334350586,14.907958984375,22.4976654052734" />
+    <Link Source="@28" Target="(Name=dumpstrtable @1 @8 @6 @3)" Category="CallStackDirectCall" Bounds="409.776184082031,584.203308105469,18.5301208496094,22.9924926757813" />
+    <Link Source="@28" Target="@33" Category="CallStackDirectCall" Bounds="334.8505859375,584.203308105469,42.7666320800781,25.4036865234375" />
+    <Link Source="@29" Target="@26" Category="CallStackDirectCall" Bounds="76.0458831787109,640.039978027344,51.5981674194336,25.9556274414063" />
+    <Link Source="@30" Target="@31" Category="CallStackDirectCall" Bounds="614.724609375,751.713317871094,39.6814575195313,25.1781616210938" />
+    <Link Source="@32" Target="@30" Category="CallStackDirectCall" Bounds="359.709777832031,693.458068847656,169.121520996094,32.6754150390625" />
+    <Link Source="@33" Target="@32" Category="CallStackDirectCall" Bounds="305.364990234375,640.039978027344,0,21" />
+    <Link Source="@4" Target="@21" Category="CallStackDirectCall" Bounds="682.364990234375,137.509994506836,0,21" />
+    <Link Source="@7" Target="@32" Category="CallStackDirectCall" Bounds="206.978988647461,640.039978027344,60.5227508544922,26.4014892578125" />
+    <Link Source="@9" Target="@18" Category="CallStackDirectCall" Bounds="419.834991455078,360.856658935547,25.6484375,23.8687438964844" />
+    <Link Source="ExternalCodeRootNode" Target="@12" Category="CallStackIndirectCall" Bounds="682.364990234375,25.8366661071777,0,21" />
+  </Links>
+  <Categories>
+    <Category Id="CallStackDirectCall" Label="调用堆栈直接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈直接调用" OutgoingActionLabel="调用堆栈直接调用" />
+    <Category Id="CallStackEntry" Label="调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="调用堆栈入口" />
+    <Category Id="CallStackIndirectCall" Label="调用堆栈间接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈间接调用" OutgoingActionLabel="调用堆栈间接调用" />
+    <Category Id="CodeSchema_CallStackUnresolvedMethod" Label="未解析的方法" CanBeDataDriven="True" DefaultAction="Microsoft.AllOutBoundLinks" IsProviderRoot="False" NavigationActionLabel="未解析的方法" />
+    <Category Id="CodeSchema_SourceLocation" Label="源位置" Icon="File" />
+    <Category Id="ExternalCallStackEntry" Label="外部调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="外部调用堆栈入口" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="起始行号" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="程序集" ValueType="Uri" />
+    <Name Id="IsUnresolved" Label="是无法解析的" ValueType="System.String" />
+    <Name Id="Name" Label="名称" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="参数" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="类型" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=lua.exe" />
+    <Alias n="2" Id="Type=&quot;lua_State *&quot;" />
+    <Alias n="3" Id="IsUnresolved=True" />
+    <Alias n="4" Id="(Name=luaL_newstate @1 @2 @3)" />
+    <Alias n="5" Id="(@2 Name=L)" />
+    <Alias n="6" Id="OverloadingParameters=[@5]" />
+    <Alias n="7" Id="(Name=luaH_new @1 Type=&quot;Table *&quot; @6 @3)" />
+    <Alias n="8" Id="Type=void" />
+    <Alias n="9" Id="(Name=luaT_init @1 @8 @6 @3)" />
+    <Alias n="10" Id="(Name=luaX_init @1 @8 @6 @3)" />
+    <Alias n="11" Id="Type=int" />
+    <Alias n="12" Id="(Name=main @1 @11 OverloadingParameters=[(@11 Name=argc),(Type=&quot;char * *&quot; Name=argv)] @3)" />
+    <Alias n="13" Id="(Name=init_registry @1 @8 OverloadingParameters=[@5,(Type=&quot;global_State *&quot; Name=g)] @3)" />
+    <Alias n="14" Id="(Name=stack_init @1 @8 OverloadingParameters=[(@2 Name=L1),@5] @3)" />
+    <Alias n="15" Id="(Name=luaS_resize @1 @8 OverloadingParameters=[@5,(@11 Name=newsize)] @3)" />
+    <Alias n="16" Id="Type=&quot;TString *&quot;" />
+    <Alias n="17" Id="(Type=&quot;const char *&quot; Name=str)" />
+    <Alias n="18" Id="(Name=luaS_new @1 @16 OverloadingParameters=[@5,@17] @3)" />
+    <Alias n="19" Id="Type=&quot;void *&quot;" />
+    <Alias n="20" Id="(@19 Name=ud)" />
+    <Alias n="21" Id="(Name=lua_newstate @1 @2 OverloadingParameters=[(Type=&quot;void * (void *, void *, unsigned __int64, unsigned __int64) *&quot; Name=f),@20] @3)" />
+    <Alias n="22" Id="(Name=f_luaopen @1 @8 OverloadingParameters=[@5,@20] @3)" />
+    <Alias n="23" Id="Type=&quot;unsigned __int64&quot;" />
+    <Alias n="24" Id="(Name=internshrstr @1 @16 OverloadingParameters=[@5,@17,(@23 Name=l)] @3)" />
+    <Alias n="25" Id="(Name=luaS_newlstr @1 @16 OverloadingParameters=[@5,@17,(@23 Name=l)] @3)" />
+    <Alias n="26" Id="(Name=setarrayvector @1 @8 OverloadingParameters=[@5,(Type=&quot;Table *&quot; Name=t),(@11 Name=size)] @3)" />
+    <Alias n="27" Id="(Name=luaD_rawrunprotected @1 @11 OverloadingParameters=[@5,(Type=&quot;void (lua_State *, void *) *&quot; Name=f),@20] @3)" />
+    <Alias n="28" Id="(Name=newshrstr @1 @16 OverloadingParameters=[@5,@17,(@23 Name=l),(Type=&quot;unsigned int&quot; Name=h)] @3)" />
+    <Alias n="29" Id="(Name=luaH_resize @1 @8 OverloadingParameters=[@5,(Type=&quot;Table *&quot; Name=t),(@11 Name=nasize),(@11 Name=nhsize)] @3)" />
+    <Alias n="30" Id="(Name=luaM_realloc_ @1 @19 OverloadingParameters=[@5,(@19 Name=block),(@23 Name=osize),(@23 Name=nsize)] @3)" />
+    <Alias n="31" Id="(Name=l_alloc @1 @19 OverloadingParameters=[@20,(@19 Name=ptr),(@23 Name=osize),(@23 Name=nsize)] @3)" />
+    <Alias n="32" Id="(Name=luaC_newobj @1 Type=&quot;GCObject *&quot; OverloadingParameters=[@5,(@11 Name=tt),(@23 Name=sz),(Type=&quot;GCObject * *&quot; Name=list),(@11 Name=offset)] @3)" />
+    <Alias n="33" Id="(Name=createstrobj @1 @16 OverloadingParameters=[@5,@17,(@23 Name=l),(@11 Name=tag),(Type=&quot;unsigned int&quot; Name=h),(Type=&quot;GCObject * *&quot; Name=list)] @3)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CurrentCallStackCall')" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+      <Setter Property="Weight" Value="1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Indirect Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackIndirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+      <Setter Property="StrokeDashArray" Value="4 1" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Call Stack Direct Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CallStackDirectCall')" />
+      <Setter Property="Stroke" Value="#FFB8B8B8" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="External And Current" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('ExternalCallStackEntry') And HasCategory('CurrentCallStackEntry')" />
+      <Setter Property="Background" Value="#FFFFF8F0" />
+      <Setter Property="Stroke" Value="#FFCE5100" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="当前调用堆栈节点" ValueLabel="True">
+      <Condition Expression="HasCategory('CurrentCallStackEntry') And !HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFFFE3C6" />
+      <Setter Property="Stroke" Value="#FFD93701" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部调用堆栈入口" ValueLabel="True">
+      <Condition Expression="HasCategory('ExternalCallStackEntry')" />
+      <Setter Property="Background" Value="#FFF7F7F7" />
+      <Setter Property="StrokeDashArray" Value="1 3" />
+      <Setter Property="Foreground" Value="#FFA5A5A5" />
+      <Setter Property="Stroke" Value="#FFA5A5A5" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结果" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="程序集" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="命名空间" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="接口" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="结构" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="枚举" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="委托" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="属性" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="方法" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="事件" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="字段" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="True">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
