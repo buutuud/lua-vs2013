@@ -184,16 +184,50 @@ static void init_registry (lua_State *L, global_State *g) {
 static void f_luaopen (lua_State *L, void *ud) {
   global_State *g = G(L);
   UNUSED(ud);
+  /* 堆栈初始化 */
   stack_init(L, L);  /* init stack */
+  /* g->l_registry = {
+    [1] = L(luaThread),   //主线程
+    [2] = {}              //全局变量表
+  } */
   init_registry(L, g);
+  /* 其实就是把g->strt的容量扩大到32 
+    g->strt = {
+      arraysize = 32
+    }
+  */
   luaS_resize(L, MINSTRTABSIZE);  /* initial size of string table */
+  /* 
+    元表关键字填充(tag eventname)
+    [size=18]
+    []
+    []              "__newindex"
+    g->tmname[i] -> "__index"(saved in g->strt)
+    luaS_fix(不回收)
+  */
   luaT_init(L);
+  /*
+    "and"
+    "or"(save in g->strt)
+     .
+     .
+    预留字存储,luaS_fix(不回收)
+  */
   luaX_init(L);
   /* pre-create memory-error message */
   g->memerrmsg = luaS_newliteral(L, MEMERRMSG);
   luaS_fix(g->memerrmsg);  /* it should never be collected */
+  /*
+     开启gc
+  */
   g->gcrunning = 1;  /* allow gc */
+  /*
+     cloudwu有赞赏过
+  */
   g->version = lua_version(NULL);
+  /* 
+     目前没啥用,看注释的意思就是,当创建一个线程的时候,可以自定义一些处理.
+  */
   luai_userstateopen(L);
 }
 
