@@ -545,7 +545,7 @@ typedef union Closure {
 typedef union TKey {
   struct {
     TValuefields;
-    struct Node *next;  /* for chaining */
+    struct Node *next;  /* for chaining (链接)*/
   } nk;
   TValue tvk;
 } TKey;
@@ -565,11 +565,18 @@ typedef struct Table {
   TValue *array;  /* array part */
   Node *node;
   Node *lastfree;  /* any free position is before this position */
-  struct Table *metatable;
+  struct Table *metatable;    /*元表就是表,从定义就可以看出来*/
   GCObject *gclist;
 } Table;
 
 
+//Q:为什么容量要是2^n
+//A:
+//http://blog.csdn.net/a_long_/article/details/51594159
+//https://my.oschina.net/hawt/blog/786786
+//public static boolean isPowerOfTwo(int x) {
+//    return x > 0 & (x & (x - 1)) == 0;
+//  }
 
 /*
 ** `module' operation for hashing (size is always a power of 2)

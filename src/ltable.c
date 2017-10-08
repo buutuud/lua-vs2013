@@ -63,22 +63,35 @@
 
 #define hashpointer(t,p)	hashmod(t, IntPoint(p))
 
+//{
+//Q:为什么要dummynode???
+//A:
+//  hash的容量为2的n次幂?n=0是容量为1,但是要节约空间啊,因此搞了个dummynode
+/*
+为了减少空表的维护成本，LUA
+在这里做了一点优化。它定义了一个不可改写的空哈希表：dummynode 。
+让空表被初始化时，node 域指向这个 dummy 节点。它虽然是一个全局变
+量，但因为对其访问是只读的，所以不会引起线程安全问题。
+*/
+#define dummynode   (&dummynode_)
 
-#define dummynode		(&dummynode_)
-
-#define isdummy(n)		((n) == dummynode)
+#define isdummy(n)    ((n) == dummynode)
 
 static const Node dummynode_ = {
   {NILCONSTANT},  /* value */
   {{NILCONSTANT, NULL}}  /* key */
-};
+};  
+//}
+
 
 
 /*
 ** hash for lua_Numbers
+** lua_Number的哈希计算函数
 */
 static Node *hashnum (const Table *t, lua_Number n) {
   int i;
+  //这里把数字哈希算法函数提取出来， 变成了用户可配置的函数 luai_hashnum 。 这个函数默认定义在 llimits.h 中
   luai_hashnum(i, n);
   if (i < 0) {
     if (cast(unsigned int, i) == 0u - i)  /* use unsigned to avoid overflows */

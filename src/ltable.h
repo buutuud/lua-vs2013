@@ -10,7 +10,9 @@
 #include "lobject.h"
 
 
+//关于table相关的宏定义
 #define gnode(t,i)	(&(t)->node[i])
+//关于node相关的宏定义
 #define gkey(n)		(&(n)->i_key.tvk)
 #define gval(n)		(&(n)->i_val)
 #define gnext(n)	((n)->i_key.nk.next)

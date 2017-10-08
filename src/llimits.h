@@ -280,7 +280,13 @@ union luai_Cast { double l_d; LUA_INT32 l_p[2]; };
 
 #include <float.h>
 #include <math.h>
+/*
+http://codercdy.com/2017/06/08/lua-source-table/
+这里有两个预定义的版本，当用户维持数字类型为 double ，且目标机器使用 IEEE754 标准的浮点数时， 使用这样一个版本。
+它使用一个联合体来取出浮点数所占内存中的数据。
 
+如果无法这种技巧来快速计算数字的哈希值，则改用一个性能不高，但更为通用，符合标准的算法：
+*/
 #define luai_hashnum(i,n) { int e;  \
   n = l_mathop(frexp)(n, &e) * (lua_Number)(INT_MAX - DBL_MAX_EXP);  \
   lua_number2int(i, n); i += e; }
