@@ -930,6 +930,7 @@ static void *l_alloc (void *ud, void *ptr, size_t osize, size_t nsize) {
 
 
 static int panic (lua_State *L) {
+  /* lua_tostring(L,-1) 将栈顶函数打印出来*/
   luai_writestringerror("PANIC: unprotected error in call to Lua API (%s)\n",
                    lua_tostring(L, -1));
   return 0;  /* return to Lua to abort */
@@ -938,6 +939,7 @@ static int panic (lua_State *L) {
 
 LUALIB_API lua_State *luaL_newstate (void) {
   lua_State *L = lua_newstate(l_alloc, NULL);
+  /* 设置g->panic 回调函数*/
   if (L) lua_atpanic(L, &panic);
   return L;
 }
