@@ -222,7 +222,10 @@ GCObject *luaC_newobj (lua_State *L, int tt, size_t sz, GCObject **list,
   *list = o;
   return o;
 }
-
+// Table表创建
+// &luaC_newobj(L, LUA_TTABLE, sizeof(Table), NULL, 0)->h
+// ->/* standard list for collectable objects */
+// ->插入到表头
 /* }====================================================== */
 
 

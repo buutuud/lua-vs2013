@@ -377,7 +377,7 @@ static void rehash (lua_State *L, Table *t, const TValue *ek) {
 ** }=============================================================
 */
 
-
+// Table表内存开辟
 Table *luaH_new (lua_State *L) {
   Table *t = &luaC_newobj(L, LUA_TTABLE, sizeof(Table), NULL, 0)->h;
   t->metatable = NULL;
@@ -388,12 +388,16 @@ Table *luaH_new (lua_State *L) {
   return t;
 }
 
-
+// Table表内存释放
 void luaH_free (lua_State *L, Table *t) {
   if (!isdummy(t->node))
     luaM_freearray(L, t->node, cast(size_t, sizenode(t)));
   luaM_freearray(L, t->array, t->sizearray);
   luaM_free(L, t);
+  /*
+    Table表内存开辟了三块儿,一部分本身,第二部分数组部分,第三部分Hash部分
+    在这里进行了释放
+  */
 }
 
 
